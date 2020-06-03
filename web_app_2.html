@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>Web_app</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+        google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawBarColors);
+
+function drawBarColors() {
+      var data = google.visualization.arrayToDataTable([
+         ['Element', 'Density', { role: 'style' }, { role: 'annotation' } ],
+         ['Calcium', 38, '#b87333', 'Ca2+' ],
+         ['Magnesium', 24.49, 'silver', 'Mg2+' ],
+         ['Sodium', 14.30, 'gold', 'Na+' ],
+         ['Clorine', 24.45, 'color: #e5e4e2', 'Cl-' ]
+      ]);
+
+      var options = {
+        title: 'Population of Largest U.S. Cities',
+        chartArea: {width: '50%'},
+        colors: ['#b0120a', '#ffab91'],
+        hAxis: {
+          title: 'Water Contents Level',
+          minValue: 0
+        },
+        vAxis: {
+          title: 'Impurities'
+        }
+      };
+      var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    }
+    </script>
+</head>
+<body>
+    <section class="text-gray-500 bg-gray-900 body-font" style="height: 170px;">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="text-center mb-20">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font text-white mb-4">Hardness of Water</h1>
+            <div class="flex mt-6 justify-center">
+              <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+            </div>
+          </div>
+          </div>
+      </section>
+    <section class="text-gray-500 bg-gray-900 body-font">
+        <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+            <div id="chart_div"></div>
+          <div class="text-center lg:w-2/3 w-full">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Water Contents Analysis</h1>
+            <p class="leading-relaxed mb-8">The presence of dissolved magnesium and calcium salts causes hardness in water. Permanent hardness is caused due to dissolved calcium or magnesium sulphates which cannot be removed by boiling. Temporary hardness is caused due to dissolved magnesium or calcium hydrogen carbonates which can be removed by boiling.</p>
+            <div class="flex justify-center">
+              <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Refresh Data</button>
+              <button class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">Transmit Data to Live Server</button>
+            </div>
+          </div>
+        </div>
+      </section>
+</body>
+</html>
