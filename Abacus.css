@@ -1,0 +1,11 @@
+div#logo img{
+    height: 72px;
+    width: 72px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
