@@ -35,46 +35,43 @@
           padding-left: 34px;
           padding-right: 34px;
           transform: rotate(270deg);
-      }
-  </style>
+        }
+        </style>
 </head>
 <body>
-    <header class="text-gray-500 bg-gray-900 body-font">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-          <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
-            <a href="https://dipendra-creator.github.io/swms.github.com/About.html" class="mr-5 hover:text-white">About</a>
-            <a href="https://dipendra-creator.github.io/swms.github.com/web_app_1.html" class="mr-5 hover:text-white">Sensors</a>
-            <a class="mr-5 hover:text-white">Design</a>
-          </nav>
-          <a class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-white lg:items-center lg:justify-center mb-4 md:mb-0">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-            </svg>
-            <span class="ml-3 text-xl xl:block lg:hidden">SWMS</span>
-          </a>
-          <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
-            <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Motor ON\OFF
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </button>
-          </div>
-        </div>
-    </header>
-    <section class="text-gray-500 bg-gray-900 body-font">
-      <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-      <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-          <meter id="Water_level" value="0.6">
-            <div class="meter-gauge">
-              <span>60%</span>
-            </div>
-          </meter>
-        </div>
+  <header class="text-gray-500 bg-gray-900 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+        <a href="https://dipendra-creator.github.io/swms.github.com/About.html" class="mr-5 hover:text-white">About</a>
+        <a href="https://dipendra-creator.github.io/swms.github.com/web_app_1.html" class="mr-5 hover:text-white">Sensors</a>
+        <a class="mr-5 hover:text-white">Design</a>
+      </nav>
+      <a class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-white lg:items-center lg:justify-center mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl xl:block lg:hidden">SWMS</span>
+      </a>
+      <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+        <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Motor ON\OFF
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button>
       </div>
     </div>
-      <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-        <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+  </header>
+  <section class="text-gray-500 bg-gray-900 body-font">
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+      <meter id="Water_level" value="0.6">
+        <div class="meter-gauge">
+          <span>60%</span>
+        </div>
+      </meter>
+    </div>
+    </div>
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Water Level in Tank</h1>
           <p class="mb-8 leading-relaxed">Current water lavel is 60%. 9L Water has been consumed till now.</p>
           <div class="flex w-full md:justify-start justify-center">
